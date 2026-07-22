@@ -48,7 +48,7 @@ The basal shear stress $\tau_b$ is governed by the regularized Coulomb sliding l
 
 $$\tau_b = \frac{\tau_{visc}^p \tau_c}{(\tau_{visc}^p + \tau_c^p)^{1/p}}$$
 
-where $\tau_c = \mu_c N$ is the Coulomb sliding limit, $N$ is the effective pressure, $\mu_c$ is the friction coefficient, and $\tau_{visc} = A_{visc} U_b$ represents the viscous drag. When large clasts are present at the ice-bed interface, they concentrate stress, shifting the viscous-to-Coulomb transition to lower velocities by modifying the viscous component $\tau_{visc} = A_{visc} \cdot \text{clast\_factor, where the clast factor is set to 3.0). If frozen-fringe debris is present on a hard bed, an additional rate-strengthening term is appended: $\tau_b \leftarrow \tau_b + 0.05 A_{visc} U_b$.
+where $\tau_c = \mu_c N$ is the Coulomb sliding limit, $N$ is the effective pressure, $\mu_c$ is the friction coefficient, and $\tau_{visc} = A_{visc} U_b$ represents the viscous drag. When large clasts are present at the ice-bed interface, they concentrate stress, shifting the viscous-to-Coulomb transition to lower velocities by modifying the viscous component $\tau_{visc} = A_{visc} \cdot \text{clast\_factor} \cdot U_b$, where the clast factor is set to 3.0. If frozen-fringe debris is present on a hard bed, an additional rate-strengthening term is appended: $\tau_b \leftarrow \tau_b + 0.05 A_{visc} U_b$.
 
 The proglacial sediment flux $q_s$ at the grounding line is modulated by the basal shear stress state:
 
