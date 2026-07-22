@@ -9,13 +9,13 @@ The models incorporate modern glaciological slip formulations (Zoet & Iverson 20
 ## 🔬 Key Physical Concepts
 
 1. **Zoet-Iverson Sliding Law (Zoet & Iverson 2020)**  
-   Implemented as a regularized Coulomb friction law (see the function `[regularized_coulomb_drag](file:///Users/esteebarin/slip_law_glaciers/zoet_parameter_sensitivity.py#L14)`). The model accounts for:
+   Implemented as a regularized Coulomb friction law (see the function `[regularized_coulomb_drag](https://github.com/adamkashdan/slip_law_glaciers/blob/main/zoet_parameter_sensitivity.py#L14)`). The model accounts for:
    * Presence of clasts and debris (`has_clasts` and `has_debris`).
    * Bed type (`bed_type`: soft sediment vs. hard bedrock).
    * Dependency of basal shear stress ($\tau_b$) on sliding velocity ($U_b$) and effective pressure ($N$).
 
 2. **Grounding Line Sedimentation & Bathymetric Evolution**  
-   The growth of Grounding Zone Wedges (GZWs) is simulated by coupling sediment flux transport (see the function `[compute_sediment_flux](file:///Users/esteebarin/slip_law_glaciers/zoet_parameter_sensitivity.py#L24)`) with the Exner mass conservation equation to update seafloor bathymetry over time.
+   The growth of Grounding Zone Wedges (GZWs) is simulated by coupling sediment flux transport (see the function `[compute_sediment_flux](https://github.com/adamkashdan/slip_law_glaciers/blob/main/zoet_parameter_sensitivity.py#L24)`) with the Exner mass conservation equation to update seafloor bathymetry over time.
 
 3. **Glacial Regimes: Warm-based vs. Cold-based**  
    Models include distinct vertical profiles for velocity and shear strain rates:
@@ -27,18 +27,18 @@ The models incorporate modern glaciological slip formulations (Zoet & Iverson 20
 ## 📂 File Directory & Script Index
 
 ### 🖥️ Core Simulators & Models
-* `[SSA_dynamic_gzw.py](file:///Users/esteebarin/slip_law_glaciers/SSA_dynamic_gzw.py)` — Coupled 1D SSA (Shallow Shelf Approximation) ice flowline + dynamic GZW sedimentation. It simulates two main scenarios:
+* `[SSA_dynamic_gzw.py](https://github.com/adamkashdan/slip_law_glaciers/blob/main/SSA_dynamic_gzw.py)` — Coupled 1D SSA (Shallow Shelf Approximation) ice flowline + dynamic GZW sedimentation. It simulates two main scenarios:
   1. *Storfjorden* — retrograde bed ridges causing grounding line stillstands and stacked GZWs.
   2. *Mackenzie Bay* — smooth prograde bed with rapid retreat and no stillstands.
-* `[SSA_simple.py](file:///Users/esteebarin/slip_law_glaciers/SSA_simple.py)` — A Python port of the 1D SSA flowline glacier model (Robel 2021).
-* `[ice_stream_ocean_model.py](file:///Users/esteebarin/slip_law_glaciers/ice_stream_ocean_model.py)` — Coupled ice-stream-ocean simulator with the Zoet sliding law, dynamic bathymetry updates, and grounding line position tracking.
+* `[SSA_simple.py](https://github.com/adamkashdan/slip_law_glaciers/blob/main/SSA_simple.py)` — A Python port of the 1D SSA flowline glacier model (Robel 2021).
+* `[ice_stream_ocean_model.py](https://github.com/adamkashdan/slip_law_glaciers/blob/main/ice_stream_ocean_model.py)` — Coupled ice-stream-ocean simulator with the Zoet sliding law, dynamic bathymetry updates, and grounding line position tracking.
 
 ### 📊 Parameter Sensitivity & Visualization
-* `[plot_cold_based_demonstration.py](file:///Users/esteebarin/slip_law_glaciers/plot_cold_based_demonstration.py)` — Visualizes vertical velocity and shear strain rate profiles comparing warm vs. cold-based glaciers. Saves output to `[cold_based_shear_preservation.png](file:///Users/esteebarin/slip_law_glaciers/cold_based_shear_preservation.png)`.
-* `[zoet_parameter_sensitivity.py](file:///Users/esteebarin/slip_law_glaciers/zoet_parameter_sensitivity.py)` — Parameter sensitivity analysis for the Zoet & Iverson (2020) law, exploring relationships between velocity, shear stress, and sediment flux.
-* `[zoet_stick_slip_cycles_storfjordenGWZs.py](file:///Users/esteebarin/slip_law_glaciers/zoet_stick_slip_cycles_storfjordenGWZs.py)` — GZW formation and stick-slip cycle simulator calibrated to the R_2018 seismic profile (Storfjorden).
-* `[zoet_stick_slip_cycles_mackenzieGWZs.py](file:///Users/esteebarin/slip_law_glaciers/zoet_stick_slip_cycles_mackenzieGWZs.py)` — Stick-slip and GZW simulator calibrated to the AG_2014 seismic profile (Amundsen Gulf / Mackenzie Margin).
-* `[mackenzie_transect_plot.jl](file:///Users/esteebarin/slip_law_glaciers/mackenzie_transect_plot.jl)` — A Julia script used for plotting/processing Mackenzie transect data.
+* `[plot_cold_based_demonstration.py](https://github.com/adamkashdan/slip_law_glaciers/blob/main/plot_cold_based_demonstration.py)` — Visualizes vertical velocity and shear strain rate profiles comparing warm vs. cold-based glaciers. Saves output to `[cold_based_shear_preservation.png](https://github.com/adamkashdan/slip_law_glaciers/blob/main/cold_based_shear_preservation.png)`.
+* `[zoet_parameter_sensitivity.py](https://github.com/adamkashdan/slip_law_glaciers/blob/main/zoet_parameter_sensitivity.py)` — Parameter sensitivity analysis for the Zoet & Iverson (2020) law, exploring relationships between velocity, shear stress, and sediment flux.
+* `[zoet_stick_slip_cycles_storfjordenGWZs.py](https://github.com/adamkashdan/slip_law_glaciers/blob/main/zoet_stick_slip_cycles_storfjordenGWZs.py)` — GZW formation and stick-slip cycle simulator calibrated to the R_2018 seismic profile (Storfjorden).
+* `[zoet_stick_slip_cycles_mackenzieGWZs.py](https://github.com/adamkashdan/slip_law_glaciers/blob/main/zoet_stick_slip_cycles_mackenzieGWZs.py)` — Stick-slip and GZW simulator calibrated to the AG_2014 seismic profile (Amundsen Gulf / Mackenzie Margin).
+* `[mackenzie_transect_plot.jl](https://github.com/adamkashdan/slip_law_glaciers/blob/main/mackenzie_transect_plot.jl)` — A Julia script used for plotting/processing Mackenzie transect data.
 
 ---
 
