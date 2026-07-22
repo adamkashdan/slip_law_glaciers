@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Kashdan"
+    given-names: "Adam"
+    email: "adamkashtanov@gmail.com"
+#  - family-names: "Co-author Family Name"
+#    given-names: "Co-author Given Name"
+title: "slip_law_glaciers: Numerical modeling of glacier sliding dynamics and GZW formation"
+version: "0.1.0-draft"
+# doi: "10.5281/zenodo.xxxxxxx" # Add Zenodo DOI here once published
+date-released: 2026-07-22
+url: "https://github.com/adamkashdan/slip_law_glaciers"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Kashdan"
+      given-names: "Adam"
+  title: "Title of the upcoming scientific paper"
+  journal: "Journal Name (e.g., Journal of Geophysical Research: Earth Surface)"
+  year: 2026
+  # volume: 1
+  # issue: 1
+  # pages: "1-10"
+  # doi: "10.1029/xxxxxxxx"
