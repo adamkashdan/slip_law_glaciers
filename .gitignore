@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+env/
+venv/
+.venv/
+
+# macOS system files
+.DS_Store
+
+# Scratch/temporary directory
+scratch/
+
+# Reference PDF files (recommended to ignore to keep repo size small)
+*.pdf
+
+# Generated figures and plots (recommended to ignore to keep repo size small)
+*.png
+*.jpg
+*.jpeg
+*.gif
