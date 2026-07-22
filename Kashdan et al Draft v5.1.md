@@ -141,9 +141,9 @@ Our results identify a frozen-bed or narrowly transitional thermal regime as the
 
 Future research will focus on a detailed analysis of the influence of local lithological factors, including the grain-size distribution of moraines, on the preservation of relict ice. In addition, full paleo-climatic simulations using CryoGrid.jl along the Mackenzie transect will replace the current synthetic thermal visualisation with observation-constrained permafrost evolution.
 
-***Data Available***
+***Code and Data Availability***
 
-All Python scripts used for data acquisition, gap-filling, statistical analysis and figure production, together with the processed dataset, are openly available at https://github.com/adamkashdan/slip_law_glaciers.
+All numerical simulation codes (Python and Julia) for the coupled SSA flowline, basal sliding parameter sweeps, sediment transport, and subsurface thermal modeling, along with calibration datasets and plotting scripts, are openly available at https://github.com/adamkashdan/slip_law_glaciers.
 
 
 **References**
